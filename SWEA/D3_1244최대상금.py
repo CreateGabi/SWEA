@@ -6,7 +6,7 @@ def dfs(count):
         return
     # 바꾸기
     for i in range(length):
-        for j in range(i+1,length):
+        for j in range(i+1, length):
             nums[i], nums[j] = nums[j], nums[i]
             #가지 치기를 위해 일단 합친다
             temp_key = "".join(nums)
@@ -21,7 +21,7 @@ def dfs(count):
 T = int(input())
 # 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
 for test_case in range(1, T + 1):
-    answer = -1
+    answer = 0
     nums, change = input().split()
     nums = list(nums)
     length = len(nums)
